@@ -100,6 +100,7 @@ input[type="search"] {
     background-color: lightgray;
     height: 1.8rem;
     font-size: 1.2rem;
+    text-indent: 1rem
 }
 
 input[type="image"] {
@@ -115,6 +116,13 @@ nav {
     place-content: start;
     gap: 5rem;
     padding: 10px;
+}
+
+nav li {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
 }
 
 nav > div {
@@ -145,6 +153,7 @@ main {
     font-size: 1rem;
     font-weight: normal;
     padding-top: 0.5rem;
+    text-align: justify;
 }
 
 .project {
@@ -153,11 +162,26 @@ main {
     background-color: white;
     padding: 10px;
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
-.project > h3,
+.icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+    align-items: end;
+    /* justify-self: end; */
+    flex-grow: 1;
+}
+
+.project > h3 {
+    padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+
 .project > p {
-    padding: 0.5rem;
+    padding: 0 0.5rem 0.5rem 0.5rem;
     overflow: auto;
 }
 
